@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angie's English School</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background:#f9f9f9; color:#333;}
+    header {
+      background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('assets/english-class.jpg') center/cover no-repeat;
+      color:white; text-align:center; padding:80px 20px;
+    }
+    header img {max-width:150px; margin-bottom:20px;}
+    header h1 {font-size:2.8rem; margin-bottom:15px;}
+    header p {font-size:1.2rem; margin-bottom:25px;}
+    .btn {display:inline-block; background:#ff6600; color:white; padding:12px 25px; border-radius:5px; text-decoration:none; font-weight:bold;}
+    nav {background:#003366; padding:15px; text-align:center; position:sticky; top:0; z-index:1000;}
+    nav a {color:white; margin:0 20px; text-decoration:none; font-weight:bold;}
+    nav a:hover {color:#ff6600;}
+    section {padding:60px 20px; max-width:1000px; margin:auto;}
+    h2 {color:#003366; text-align:center; margin-bottom:20px; font-size:2rem;}
+    p {text-align:justify; margin-bottom:15px;}
+    ul {list-style:none; padding:0;}
+    ul li {background:#e6f0ff; margin:10px 0; padding:15px; border-left:6px solid #ff6600; border-radius:4px;}
+    #contact {background:#003366; color:white; padding:60px 20px;}
+    #contact h2 {color:#ffcc66;}
+    form {max-width:600px; margin:20px auto; background:white; padding:25px; border-radius:8px;}
+    form label {display:block; margin-bottom:8px; font-weight:bold; color:#003366;}
+    form input, form textarea, form select {width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;}
+    form button {background:#ff6600; color:white; border:none; padding:12px; width:100%; font-size:1rem; border-radius:5px; cursor:pointer;}
+    form button:hover {background:#e65c00;}
+    footer {background:#002244; color:white; text-align:center; padding:15px; font-size:0.9rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Angie's English School Logo">
+    <h1>Welcome to Angie's English School</h1>
+    <p>Learn English with Confidence and Cultural Connection</p>
+    <a href="#contact" class="btn">Join Us Today</a>
+  </header>
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#vision">Vision</a>
+    <a href="#values">Values</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>At Angie's English School we are dedicated to teaching English to students of all ages through a specialized methodology for Spanish speakers, which connects learning with the culture and structure of the Spanish language. Our goal is to develop communication, understanding and confidence skills in each student, using dynamic, practical and personalized strategies that facilitate the natural transition from Spanish to English. We train students capable of developing fluently and confidently in academic, professional and cultural environments at a global level.</p>
+  </section>
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>To be the leading English school in the comprehensive training of Spanish speakers, recognized for its innovation, academic quality and verifiable results, preparing students of all ages to communicate fluently and open up to global opportunities, without losing their cultural identity.</p>
+  </section>
+  <section id="values">
+    <h2>Our Values</h2>
+    <ul>
+      <li><strong>Academic Excellence:</strong> We guarantee a high level of teaching with updated and effective methods.</li>
+      <li><strong>Adaptability:</strong> We adjust our strategies to the needs, ages and learning rhythms of each student.</li>
+      <li><strong>Cultural Proximity:</strong> We teach English respecting and taking advantage of the linguistic and cultural roots of Spanish.</li>
+      <li><strong>Innovation:</strong> We incorporate modern resources and technologies for dynamic and attractive learning.</li>
+      <li><strong>Commitment:</strong> We accompany our students until they reach their linguistic goals.</li>
+      <li><strong>Trust:</strong> We promote a safe environment to learn, practice and make mistakes without fear.</li>
+      <li><strong>Teamwork:</strong> We collaborate with families, teachers and students to achieve lasting results.</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@angiesenglishschool.com">info@angiesenglishschool.com</a></p>
+    <p>Phone: +507 6000-0000</p>
+    <p>Location: Panama City, Panama</p>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+507 6000-0000" required>
+      <label for="level">English Level</label>
+      <select id="level" name="level" required>
+        <option value="">Select your level</option>
+        <option value="beginner">Beginner (A1)</option>
+        <option value="elementary">Elementary (A2)</option>
+        <option value="intermediate">Intermediate (B1-B2)</option>
+        <option value="advanced">Advanced (C1-C2)</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us about your learning goals"></textarea>
+      <button type="submit">Send Information</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Angie's English School | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
